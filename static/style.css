@@ -1,0 +1,158 @@
+body{
+font-family: 'Dosis', sans-serif;
+margin:0px;
+}
+/* navbar settings */
+
+.navbar {
+	border-radius:0px;
+	border:0px;
+	margin:0px;
+	background-color:#255525;
+}
+.navbar-default .navbar-brand {
+}
+
+.navbar .brand, .navbar .nav > li > a {
+		color:#fff;
+		font-size:1.2em;
+}
+.navbar .brand, .navbar .nav > li > a:hover {
+	font-size:1.5em;
+	color:#fff;
+}
+.navbar .brand, .navbar .nav > li{
+}
+
+.navbar .brand, .navbar .nav{
+}
+/*position brand to middle of page */
+
+.navbar-brand{
+	color:#fff;
+}
+
+/* end navbar */
+
+/* carousel settings */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.carousel-inner > .item > img {
+  height:80vh;
+}
+.carousel{
+	z-index:-2;
+}
+
+.carousel-inner>.item{
+   /*disables white flash*/
+   -webkit-transition: -webkit-transform .5s ease-in-out;
+   -o-transition: -o-transform .5s ease-in-out;
+   transition: transform .5s ease-in-out;
+}
+
+.carousel-inner{
+/*just incase the flash (style above) comes back*/
+   background: #000;
+}
+
+p{
+	font-size: 20px;
+}
+
+.carousel-caption{
+	background-color:rgba(0,0,0,0.7);
+}
+/*
+.carousel-inner>.item {
+    -webkit-transition: 0s !important;
+    -o-transition: 0s !important;
+    transition: 0s !important;
+}
+*/
+/*end carousel*/
+
+.carsel { 
+padding:0px;
+}
+
+.mobile{display:none;}
+
+@media only screen and (max-device-width: 400px) {
+	
+#myCarousel{
+	display:none;
+}
+.mobile{
+	display:flex;
+	background-color:#000;
+	background-image:url("images/hot1.JPG");
+	height:50vh;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+ 
+ .media-body{
+	 font-size:14px;
+ }
+
+	}
+/******* Accordian *******/
+button.accordion {
+    background-color:#255525;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #255525;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+	margin-top:5px;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	   -webkit-transition: -webkit-transform max-height 0.2s ease-out;
+   -o-transition: -o-transform max-height 0.2s ease-out;
+}
+/****** end Accordian ******/
+
+/******* top section ********/
+.media {
+	margin:0;
+	padding:16px;
+	background-color:#2B8860;
+	color:#fff;
+
+}
+/*** end top section ***/
+
+
+/***** footer *****/
+.footer{
+	border-top: 1px solid #000;
+}

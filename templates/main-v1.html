@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title> Fawzy Hotels </title>
+{% block styles %}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='css/bootstrap.min.css')}}">
+
+<link rel='stylesheet' type= "text/css" href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="{{url_for('.static', filename='js/bootstrap.min.js')}}"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="{{url_for('.static', filename='images/logo.png')}}" height="100px"> </a>
+  </div>
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+	
+	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Food & Drinks <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Hall Fire</a></li>
+        <li><a href="#">Shopping</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  
+
+</nav>
+
+<div class= "container-fluid">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>    
+	<li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{{url_for('.static', filename='images/hot1.JPG')}}" >
+	     <div class="carousel-caption">
+          <h3>Fawzy Hotels</h3>
+        </div>
+    </div>                                                         
+                                                                   
+    <div class="item">                                             
+      <img src="{{url_for('.static', filename='images/hot2.JPG')}}" >
+	     <div class="carousel-caption">
+          <h3>Fawzy Hotels</h3>
+        </div>
+    </div>                                                         
+                                                                   
+    <div class="item">                                             
+      <img src="{{url_for('.static', filename='images/hot3.JPG')}}" >
+	     <div class="carousel-caption">
+          <h3>Fawzy Hotels</h3>
+        </div>
+    </div>                                                         
+	                                                               
+	<div class="item">                                             
+      <img src="{{url_for('.static', filename='images/hot4.JPG')}}" >
+	     <div class="carousel-caption">
+          <h3>Fawzy Hotels</h3>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div class= "container" style="text-align:center;">
+<h3> <span style="color:#86D486"> Booking </span> </h3>
+<hr> </hr>
+
+<p> We are working on revamping our website for an even better customer experience</p>
+<p> In the mean time, please place a booking by contacting us using the information below </p> 
+
+<p> Email:xxxx@xxxx.com Telephone:xxxxxxxxx </p>
+</div>
+
+<div class= "container" style="text-align:center;">
+<h3> <span style="color:#86D486"> Services </span> </h3>
+<hr> </hr>
+
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="{{url_for('.static', filename='images/food.jpg')}}" alt="...">
+      <div class="caption">
+        <h3>Food & Drinks</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="{{url_for('.static', filename='images/bedroom.jpg')}}" alt="...">
+      <div class="caption">
+        <h3>Accommodation</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="{{url_for('.static', filename='images/event.jpg')}}" alt="..." >
+      <div class="caption">
+        <h3>Hall Hire</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="{{url_for('.static', filename='images/shopping.jpg')}}" alt="...">
+      <div class="caption">
+        <h3>Souvenir shopping</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
