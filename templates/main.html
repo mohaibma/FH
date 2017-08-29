@@ -21,7 +21,7 @@
 	<div class="row">
 		<div class="logo col-sm-12" style="text-align:center;">
 		<img src="{{url_for('.static', filename='images/logo2.png')}}" height="80px">
-		<p> Comfort Class Elegance </p> 
+		<p class="slogan"> Comfort Class Elegance </p> 
 		</div>
 		<!--
 		<div class="col-sm-12">
@@ -48,34 +48,49 @@
 	 -->	
 	</div>
 </div>
-<hr></hr>
 
+<div class="container">
+	<img class="main-pic" src="{{url_for('.static', filename='images/hot1.JPG')}}" height="400" width="100%" alt="...">
+</div>
+<br>
 
 <div class="container">
 	<div class="row">		
 		<div  class="col-sm-12 col-md-6">
 			<div class="panel panel-default">
-			  <div class="panel-heading panel-heading-custom"><span style="color:#86D486"> FAWZY HOTEL </span></div>
+			  <div class="panel-heading panel-heading-custom"> FAWZY HOTEL</div>
 			  <div class="panel-body">
 			  <div class="row">
-				<div  class="col-sm-6 col-md-6">
+				<div  class="hotel-sum col-sm-6 col-md-6">
 						<div class="well">
-						<p> <span style="font-size:2em;"> 22 </span> Hotel rooms </p>
+						<p> <span style="font-size:1.5em; color:#E824C9;"> 22 </span> Hotel rooms </p>
+						<button type="button" class="icon btn btn-default" aria-label="Left Align">
+						  <span class="glyphicon glyphicon-bed" aria-hidden="true"></span>
+						</button>
 						</div>
 					</div>					
-					<div  class="col-sm-6 col-md-6">
+					<div  class="hotel-sum  col-sm-6 col-md-6">
 						<div class="well">
-						<p> <span style="font-size:2em;"> 1 </span>  Restaurant </p>
+						<p> <span style="font-size:1.5em; color:#E824C9;"> 1 </span>  Restaurant </p>
+						<button type="button" class="icon btn btn-default" aria-label="Left Align">
+						  <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
+						</button>
 						</div>
 					</div>					
-					<div  class="col-sm-6 col-md-6">
+					<div  class="hotel-sum  col-sm-6 col-md-6">
 						<div class="well">
-						<p> <span style="font-size:2em;"> 1 </span> Event Hall</p>
+						<p> <span style="font-size:1.5em; color:#E824C9;"> 1 </span> Event Hall</p>
+						<button type="button" class="icon btn btn-default" aria-label="Left Align">
+						  <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>
+						</button>
 						</div>
 					</div>					
-					<div  class="col-sm-6 col-md-6">
+					<div  class="hotel-sum col-sm-6 col-md-6">
 						<div class="well">
-						<p> <span style="font-size:2em;"> 1 </span>  Souvenir shop </p>
+						<p> <span style="font-size:1.5em; color:#E824C9;"> 1 </span>  Souvenir shop </p>
+						<button type="button" class="icon btn btn-default" aria-label="Left Align">
+						  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+						</button>
 						</div>
 					</div>
 			  </div>
@@ -84,9 +99,10 @@
 			</div>		
 		
 		</div>
+		
 		<div  class="col-sm-12 col-md-6">
 			<div class="panel panel-default">
-			  <div class="panel-heading panel-heading-custom"><span style="color:#86D486"> BOOKING </span></div>
+			  <div class="panel-heading panel-heading-custom">BOOKING</div>
 			  <div class="panel-body">
 			  
 				<p> We are working on revamping our website for a better customer experience</p>
@@ -99,11 +115,12 @@
 			</div>		
 					
 		</div>
+		</div>
 	
-		
+		<div class="row">	
 		<div  class="col-sm-12 col-md-12">
 			<div class="container panel panel-default">
-			  <div class="panel-heading panel-heading-custom"><span style="color:#86D486"> SERVICES </span></div>
+			  <div class="panel-heading panel-heading-custom">SERVICES</div>
 			  <div class="panel-body">
 					<div class="service row">
 						<div class="col-sm-12 col-md-12">
@@ -150,7 +167,90 @@
 			</div>		
 					
 		</div>
-	</div>
+		</div>
+		
+		<div class="row">
+		<div class="panel panel-default">
+		  <div class="panel-heading panel-heading-custom">ADDITIONAL SERVICES</div>
+		  <div class="panel-body">
+			<div class="container text-center">
+				<hr />
+			  <div class="row">
+				<div class="col-lg-12">
+				  <div class="col-md-4">
+					<ul class="nav nav-pills nav-stacked">
+					  <li>meeting rooms</li>
+					  <li>Internet access</li>
+					</ul>
+				  </div>
+				  <div class="col-md-4">
+					<ul class="nav nav-pills nav-stacked">
+					  <li>13 available TV stations</li>
+					  <li>Laundry services</li>
+					</ul>
+				  </div>
+				  <div class="col-md-4">
+					<ul class="nav nav-pills nav-stacked">
+					  <li>24/7 electricity</li>        
+					</ul>
+				  </div> 
+				</div>
+			  </div>
+			  <hr>
+			</div>
+		  </div>
+		</div>
+		</div>
+		
+		
+		<div class="row">	
+		<div  class="col-sm-12 col-md-12">
+			<div class="panel panel-default">
+			  <div class="panel-heading panel-heading-custom"> ROOMS</div>
+			  <div class="panel-body">
+				<div class="room row">
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+						  <img src="{{url_for('.static', filename='images/room.jpg')}}" height="300px" width="300px" alt="...">
+						  <div class="caption">
+							<h3>Standard Room</h3>
+							<p>Prices from: &#8358;18,000</p>
+						  </div>
+						</div>	
+					</div>	
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+						  <img src="{{url_for('.static', filename='images/room2.JPG')}}" height="300px" width="300px" alt="...">
+						  <div class="caption">
+							<h3>Executive Room</h3>
+							<p>Prices from: &#8358;22,000</p>
+						  </div>
+						</div>	
+					</div>	
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+						  <img src="{{url_for('.static', filename='images/room3.JPG')}}" height="300px" width="300px" alt="...">
+						  <div class="caption">
+							<h3>Executive Deluxe Family Room</h3>
+							<p>Prices from: &#8358;55,000</p>
+						  </div>
+						</div>	
+					</div>	
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+						  <img src="{{url_for('.static', filename='images/room4.JPG')}}" height="300px" width="300px" alt="...">
+						  <div class="caption">
+							<h3>Ibadan Presidential Room</h3>
+							<p>Prices from: &#8358;80,000</p>
+						  </div>
+						</div>	
+					</div>	
+			  </div>
+
+			</div>		
+					
+		</div>
+		</div>
 </div>
 
 <div class="footer container text-center">

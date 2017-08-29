@@ -1,8 +1,16 @@
-.nav a {
-    color: #fff;
+.nav{
+    color: #000;
     font-size: 12px;
     font-weight: bold;
 	text-transform: uppercase;
+}
+
+.slogan{
+	color: #000;
+    font-size: 12px;
+    font-weight: bold;
+	text-transform: uppercase;
+	padding-top:5px;
 }
 
 .nav ul{margin:0;}
@@ -17,8 +25,8 @@ nav.navbar{
 	border-bottom:0.5px solid;
 	padding:0;
 }
-.container-fluid{
-}
+
+
 
 .panel-heading{
 	text-align:center;
@@ -27,12 +35,10 @@ nav.navbar{
 .panel-default > .panel-heading-custom {
 background: #fff;
 text-align:center;
-font-size:2em;
+font-size:1.5em;
+color:#187F18;
 }
 
-.well{
-	background-color:#fff;
-}
 .panel, .panel-body, .panel-heading{
 	border:0;
 	box-shadow: none;
@@ -40,9 +46,37 @@ font-size:2em;
 .panel-body{
 	text-align:center;
 }
+
+
 .service{
 	padding-bottom:20px;
 }
 .footer a{
 	color:#000;
+}
+
+.thumbnail{
+	border:0;
+}
+.thumbnail h3{
+	font-size:1.2em;
+}
+.well{
+	background-color:#fff;
+}
+.hotel-sum{
+	position:relative;
+}
+.icon{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+	.main-pic{
+		height:35vh;
+	}
 }
