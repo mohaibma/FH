@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block title %}Fawzy{% endblock %}
+{% block head %}
+  {{ super() }}
+		<style>	
+		.footer a{color:#fff;}
+		.footer{background-color:#911A48;color:#fff;}
+		</style>
+{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card rooms">
+		<div class="card-body">
+		<h4 class="card-title">ROOMS & RATES</h4>
+		
+		<div class="row">
+			<div class="col-sm-12 col-md-4">
+				   <div class="card-body">
+					<h4 class="card-title">Classic</h4>
+					<h6 class="card-subtitle mb-2 text-muted">
+					Prices from: &#8358;20,000
+					</h6>
+					<img class="card-img-top" src="{{url_for('.static', filename='images/classic.jpg')}}" alt="...">
+			</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+					<div class="card-body">
+					<h4 class="card-title">Deluxe Classic</h4>
+					<h6 class="card-subtitle mb-2 text-muted">
+					Prices from: &#8358;22,000
+					</h6>
+					<img class="card-img-top" src="{{url_for('.static', filename='images/decl_1.jpg')}}" alt="...">
+			</div>
+			</div>
+			
+		   <div class="col-sm-12 col-md-4">
+		   <div class="card-body">
+					<h4 class="card-title">Royale Deluxe</h4>
+					<h6 class="card-subtitle mb-2 text-muted">
+					Prices from: &#8358;25,000
+					</h6>
+					<img class="card-img-top" src="{{url_for('.static', filename='images/rode_1.jpg')}}" alt="...">
+			</div>
+			</div>
+			</div>
+		</div>
+		</div>
+		
+	<div class="card rooms">
+		<h4 class="card-title">Room & Hotel Services</h4>
+		
+		<ul class="list-group">
+		  <li class="list-group-item">Restaurant</li>
+		  <li class="list-group-item">Event Hall Hire</li>
+		  <li class="list-group-item">Internet Access</li>
+		  <li class="list-group-item">13 Available TV Stations</li>
+		  <li class="list-group-item">Laundry Services</li>
+		  <li class="list-group-item">24/7 Power Supply</li>
+		  <li class="list-group-item">Luxury Shop</li>
+		</ul>
+		</div>
+		
+	</div>
+	<br>
+	
+	
+{% include 'footer.html' %}
+{% endblock %}

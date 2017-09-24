@@ -7,5 +7,9 @@ def homepage():
     return render_template("main.html")
 
 
+@app.route('/room_rate')
+def room_rate():
+    return render_template("room_rate.html")
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

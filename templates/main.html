@@ -1,270 +1,89 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+{% extends "layout.html" %}
+{% block title %}Fawzy{% endblock %}
+{% block head %}
+  {{ super() }}
+		<style>	
+		.footer a{color:#fff;}
+		.footer{background-color:#911A48;color:#fff;}
+		</style>
+{% endblock %}
+{% block content %}
 
-<title> Fawzy Hotels </title>
-<link rel="stylesheet"
-      href="{{url_for('.static', filename='css/bootstrap.min.css')}}">
-
-	  <link rel='stylesheet' type= "text/css" href="{{url_for('.static', filename='animate.css')}}">
-<link rel='stylesheet' type= "text/css" href="{{url_for('.static', filename='style.css')}}">
-
-<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-
-</head>
-
-<body>
-<div class="container-fluid">
-	<div class="row">
-		<div class="logo col-sm-12" style="text-align:center;">
-		<img src="{{url_for('.static', filename='images/logo2.png')}}" height="80px">
-		<p class="slogan"> Comfort Class Elegance </p> 
-		</div>
-		<!--
-		<div class="col-sm-12">
-			<nav class="navbar navbar-default">
-			  <div class="container-fluid">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				</div>
-
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				  <ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Restaurant</a></li>
-					<li><a href="#">Event Hire</a></li>
-				  </ul>
-				</div>
-			  </div>
-			</nav>
-		</div>
-	 -->	
+<div class="main-pic">
+	<img class="" src="{{url_for('.static', filename='images/stairwell_2.jpg')}}" alt="...">
+	<div class="caption">
+		<h4 class="slogan">Comfort Class Elegance</h4>
 	</div>
 </div>
-
+			<div id="contact" class="card about">
+			<div class="card-body">
+			<P class="card-text">
+					Welcome to Fawzy Hotel  where our classy and Elegant ambience will make you feel so much at home and relaxed.  Your comfort is guaranteed as it is our optimal goal.   
+			Our services are excellent and You will always want to come back....
+			At Fawzy Hotel,we will pamper you much and you'll be glad you made us your best choice !</p>
+			</div>
+			</div>
+<hr></hr>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-8" style="text-align:center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/YqMZDNxuOTE" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+		<div class="col-sm-12 col-md-4">
+			<div id="contact" class="card booking">
+			<div class="card-body">
+					<h6 class="card-subtitle mb-2 text-muted"> Book your stay with us today! </h6
+					<P class="card-text">
+					please place a booking by contacting us using the information below:			 
+					</p>
+					<hr> </hr>
+					<P class="card-text">
+						Telephone: +234 8105 4799 34 <br>
+						Telephone: +234 9098 8467 50 <br>
+						Email: info@fawzyhotels.com
+					</p>
+			</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<hr> </hr>
 <div class="container">
-	<img class="main-pic" src="{{url_for('.static', filename='images/hot1.JPG')}}" height="400" width="100%" alt="...">
+	<h4 style="text-align:center;">Welcome to Fawzy Hotel! </h4>
+	<hr></hr>
+	
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+		  <img class="d-block img-fluid" src="{{url_for('.static', filename='images/rest_1.jpg')}}">
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block img-fluid" src="{{url_for('.static', filename='images/event_1.jpg')}}">
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block img-fluid" src="{{url_for('.static', filename='images/fawzy_1.jpg')}}">
+		</div>		
+		<div class="carousel-item">
+		  <img class="d-block img-fluid" src="{{url_for('.static', filename='images/rec_1.jpg')}}">
+		</div>		
+		<div class="carousel-item">
+		  <img class="d-block img-fluid" src="{{url_for('.static', filename='images/stairwell_1.jpg')}}">
+		</div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
 </div>
 <br>
 
-<div class="container">
-	<div class="row">		
-		<div  class="col-sm-12 col-md-6">
-			<div class="panel panel-default">
-			  <div class="panel-heading panel-heading-custom"> FAWZY HOTEL</div>
-			  <div class="panel-body">
-			  <div class="row">
-				<div  class="hotel-sum col-sm-6 col-md-6">
-						<div class="well">
-						<p> <span style="font-size:1.5em; color:#E824C9;"> 22 </span> Hotel rooms </p>
-						<button type="button" class="icon btn btn-default" aria-label="Left Align">
-						  <span class="glyphicon glyphicon-bed" aria-hidden="true"></span>
-						</button>
-						</div>
-					</div>					
-					<div  class="hotel-sum  col-sm-6 col-md-6">
-						<div class="well">
-						<p> <span style="font-size:1.5em; color:#E824C9;"> 1 </span>  Restaurant </p>
-						<button type="button" class="icon btn btn-default" aria-label="Left Align">
-						  <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
-						</button>
-						</div>
-					</div>					
-					<div  class="hotel-sum  col-sm-6 col-md-6">
-						<div class="well">
-						<p> <span style="font-size:1.5em; color:#E824C9;"> 1 </span> Event Hall</p>
-						<button type="button" class="icon btn btn-default" aria-label="Left Align">
-						  <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>
-						</button>
-						</div>
-					</div>					
-					<div  class="hotel-sum col-sm-6 col-md-6">
-						<div class="well">
-						<p> <span style="font-size:1.5em; color:#E824C9;"> 1 </span>  Luxury shop </p>
-						<button type="button" class="icon btn btn-default" aria-label="Left Align">
-						  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-						</button>
-						</div>
-					</div>
-			  </div>
-				
-			  </div>
-			</div>		
-		
-		</div>
-		
-		<div  class="col-sm-12 col-md-6">
-			<div class="panel panel-default">
-			  <div class="panel-heading panel-heading-custom">BOOKING</div>
-			  <div class="panel-body">
-			  
-				<p> We are working on revamping our website for a better customer experience</p>
-				<p> In the mean time, please place a booking by contacting us using the information below </p> 
+{% include 'footer.html' %}
 
-				<p> Telephone: +234 8105 4799 34 </p>
-				<p> Telephone: +234 9098 8467 50 </p>
-								
-			  </div>
-			</div>		
-					
-		</div>
-		</div>
-	
-		<div class="row">	
-		<div  class="col-sm-12 col-md-12">
-			<div class="container panel panel-default">
-			  <div class="panel-heading panel-heading-custom">SERVICES</div>
-			  <div class="panel-body">
-					<div class="service row">
-						<div class="col-sm-12 col-md-12">
-						<img src="{{url_for('.static', filename='images/food.jpg')}}" class="img-circle" height="80px" width="80px" alt="...">
-						</div>
-						<div class="col-sm-12 col-md-12">
-						<p> Restaurant </p>
-							<p>
-							  whether it's breakfast on holiday or lunch break from work, Fawzy hotels offer a mouth-watering menu with an exquisite selection of Nigerian & international dishes.  
-							  We pride ourselves on serving delicious food with the best of ingredients guaranteed to leave you wanting more & more & more! 
-							  </p>
-						</div>
-					</div>
-					
-					<div class="service row">
-						<div class="col-sm-12 col-md-12">
-						<img src="{{url_for('.static', filename='images/event.jpg')}}" class="img-circle" height="80px" width="80px" alt="...">
-						</div>
-
-						<div class="col-sm-12 col-md-12">
-						<p> Hall Hire </p>
-						<p>
-						Perfect for conference meetings, seminars and small social events, our fully air-conditioned hall  is available for hire with our kitchen 
-						also available for catering services. 
-						</p>
-						</div>
-					</div>
-					
-					<div class="service row">
-						<div class="col-sm-12 col-md-12">
-						<img src="{{url_for('.static', filename='images/shopping.jpg')}}" class="img-circle" height="80px" width="80px" alt="...">
-						</div>
-						<div class="col-sm-12 col-md-12">
-						<p>Shopping </p>
-						<p>
-						We offer a selection of high-end costume jewellery & souvenirs for the women who stand out. 
-						We believe in catering to the needs of every woman so we carry a wide range of products that are affordable and long lasting. 
-						Visit Fawzy today, let's make YOU the talk of the town! 
-						</p>
-						</div>
-					</div>
-												
-			  </div>
-			</div>		
-					
-		</div>
-		</div>
-		
-		<div class="row">
-		<div class="panel panel-default">
-		  <div class="panel-heading panel-heading-custom">ADDITIONAL SERVICES</div>
-		  <div class="panel-body">
-			<div class="container text-center">
-				<hr />
-			  <div class="row">
-				<div class="col-lg-12">
-				  <div class="col-md-4">
-					<ul class="nav nav-pills nav-stacked">
-					  <li>meeting rooms</li>
-					  <li>Internet access</li>
-					</ul>
-				  </div>
-				  <div class="col-md-4">
-					<ul class="nav nav-pills nav-stacked">
-					  <li>13 available TV stations</li>
-					  <li>Laundry services</li>
-					</ul>
-				  </div>
-				  <div class="col-md-4">
-					<ul class="nav nav-pills nav-stacked">
-					  <li>24/7 electricity</li>        
-					</ul>
-				  </div> 
-				</div>
-			  </div>
-			  <hr>
-			</div>
-		  </div>
-		</div>
-		</div>
-		
-		
-		<div class="row">	
-		<div  class="col-sm-12 col-md-12">
-			<div class="panel panel-default">
-			  <div class="panel-heading panel-heading-custom"> ROOMS</div>
-			  <div class="panel-body">
-				<div class="room row">
-					<div class="col-sm-6 col-md-3">
-						<div class="thumbnail">
-						  <img src="{{url_for('.static', filename='images/room.jpg')}}" height="300px" width="300px" alt="...">
-						  <div class="caption">
-							<h3>Standard Room</h3>
-							<p>Prices from: &#8358;18,000</p>
-						  </div>
-						</div>	
-					</div>	
-					<div class="col-sm-6 col-md-3">
-						<div class="thumbnail">
-						  <img src="{{url_for('.static', filename='images/room2.JPG')}}" height="300px" width="300px" alt="...">
-						  <div class="caption">
-							<h3>Executive Room</h3>
-							<p>Prices from: &#8358;22,000</p>
-						  </div>
-						</div>	
-					</div>	
-					<div class="col-sm-6 col-md-3">
-						<div class="thumbnail">
-						  <img src="{{url_for('.static', filename='images/room3.JPG')}}" height="300px" width="300px" alt="...">
-						  <div class="caption">
-							<h3>Executive Deluxe Family Room</h3>
-							<p>Prices from: &#8358;55,000</p>
-						  </div>
-						</div>	
-					</div>	
-					<div class="col-sm-6 col-md-3">
-						<div class="thumbnail">
-						  <img src="{{url_for('.static', filename='images/room4.JPG')}}" height="300px" width="300px" alt="...">
-						  <div class="caption">
-							<h3>Ibadiaran Presidential Room</h3>
-							<p>Prices from: &#8358;80,000</p>
-						  </div>
-						</div>	
-					</div>	
-			  </div>
-
-			</div>		
-					
-		</div>
-		</div>
-</div>
-
-<div class="footer container text-center">
-    <div class="row">
-        <div class="col-lg-12">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="/">© 2017 FAWZY HOTEL</a></li>
-				<p> FAWZY HOTEL LTD. Block VII, plots 1,2,3. Adewumi layout, off akinyemi way. </p>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="{{url_for('.static', filename='js/bootstrap.min.js')}}"></script>
-</body>
-</html>
+{% endblock %}
